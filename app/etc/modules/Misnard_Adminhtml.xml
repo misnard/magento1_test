@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Misnard_Adminhtml>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Adminhtml/>
+            </depends>
+        </Misnard_Adminhtml>
+    </modules>
+</config>

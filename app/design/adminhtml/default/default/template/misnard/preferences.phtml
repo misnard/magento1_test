@@ -1,0 +1,11 @@
+<h1><?php echo $this->__('Customer preferences'); ?></h1>
+<?php $this->getCustomerPreferences(); ?>
+<?php foreach ($this->getCustomerPreferences() as $label => $preference): ?>
+    <label><?php echo $this->__($label) . ': '; ?></label>
+    <div>
+        <?php foreach ($preference as $choices): ?>
+            <label style="color: grey;"><?php echo $this->__($choices); ?></label>
+        <?php endforeach; ?>
+    </div>
+    <br>
+<?php endforeach; ?>

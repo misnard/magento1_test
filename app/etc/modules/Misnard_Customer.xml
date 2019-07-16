@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Misnard_Customer>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Customer/>
+            </depends>
+        </Misnard_Customer>
+    </modules>
+</config>

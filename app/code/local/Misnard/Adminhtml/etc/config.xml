@@ -1,0 +1,37 @@
+<config>
+    <modules>
+        <Misnard_Adminhtml>
+            <version>0.1.0</version>
+        </Misnard_Adminhtml>
+    </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Misnard_Adminhtml before="Mage_Adminhtml">Misnard_Adminhtml</Misnard_Adminhtml>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+        <layout>
+            <updates>
+                <preferences>
+                    <file>preferences.xml</file>
+                </preferences>
+            </updates>
+        </layout>
+    </admin>
+    <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <customer_edit_tabs>Misnard_Adminhtml_Block_Customer_Edit_Tabs</customer_edit_tabs>
+                </rewrite>
+            </adminhtml>
+            <misnard_adminhtml>
+                <class>Misnard_Adminhtml_Block</class>
+            </misnard_adminhtml>
+        </blocks>
+    </global>
+</config>

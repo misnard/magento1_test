@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <!--
+    Customer account home dashboard layout
+    -->
+    <customer_account_preferences translate="label">
+        <label>Customer My Account Preferences</label>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="misnard_customer/preferences" name="customer_account_preferences" template="customer/account/preferences.phtml" />
+        </reference>
+    </customer_account_preferences>
+
+    <!--
+        Customer account pages, rendered for all tabs in dashboard Overloaded to add dashboard link
+    -->
+    <customer_account translate="label">
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="customer"><name>preferences</name><path>customer/account/preferences/</path><label>My preferences</label></action>
+        </reference>
+    </customer_account>
+</layout>
